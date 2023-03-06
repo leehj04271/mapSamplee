@@ -518,7 +518,7 @@ THE SOFTWARE.
 
 
 
-    window.onresize = () => {
+     window.onresize = () => {
 
 
         if ($(window).width() > 768) {
@@ -526,10 +526,13 @@ THE SOFTWARE.
 
 
         } else {
-            $(".subway-map").css("zoom", $(window).width() * 1.5 / $('.subway-map').width())
+            $(".subway-map").css("zoom", $(window).width() *1.5 / $('.subway-map').width())
+           
             $(".subway-map").css("position", "relative")
-
-            $(".subway-map").css("left", '-200px')
+           
+            const element = document.getElementById("wrap");
+            element.scrollLeft = 100;
+           
         }
 
     };
@@ -540,10 +543,13 @@ THE SOFTWARE.
 
             $(".subway-map").css("zoom", $(window).width() * .7 / $('.subway-map').width())
         }  else {
-            $(".subway-map").css("zoom", $(window).width() * 1.5 / $('.subway-map').width())
+            $(".subway-map").css("zoom", $(window).width() *1.5 / $('.subway-map').width())
+           
             $(".subway-map").css("position", "relative")
-
-            $(".subway-map").css("left", '-200px')
+           
+            const element = document.getElementById("wrap");
+            element.scrollLeft = 100;
+           
         }
     };
 

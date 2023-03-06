@@ -9,7 +9,8 @@
         body {
             font-family: Verdana;
             font-size: 8pt;
-            overflow: hidden;
+        overflow: hidden;
+          width: 100%;
         }
 
         /* The main DIV for the map */
@@ -19,7 +20,7 @@
             height: 900px;
            
             background-color: white;
-     
+            overflow-x: scroll;
         }
 
         /* Text labels */
@@ -55,6 +56,12 @@
 
  */
 
+ #wrap {
+ 
+    width: 90vw;
+    overflow: scroll;
+ }
+
         .nav {
             border: 2px solid blue;
             position: absolute;
@@ -80,7 +87,9 @@
 </head>
 
 <body style="zoom : 1">
-    <div class="subway-map" data-columns="25" data-rows="16" data-cellSize="40" data-legendId="legend"
+
+    <div id="wrap">
+        <div class="subway-map" data-columns="25" data-rows="16" data-cellSize="40" data-legendId="legend"
         data-textClass="text" data-gridNumbers="true" data-grid="true" data-lineWidth="8">
     <!--     <ul data-color="#82eca7" data-label="jQuery Widgets">
             <li data-coords="18,2"><a href="#">신길동</a></li>
@@ -182,6 +191,8 @@
             <li data-coords="19,4"><a href="#">뚝섬</a></li>
             <li data-coords="20,5" data-dir="E"><a href="#"></a></li>
           </ul>
+    </div>
+
     </div>
 
     <div class="nav">

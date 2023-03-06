@@ -526,8 +526,10 @@ THE SOFTWARE.
 
            
         } else {
-            $(".subway-map").css("zoom", $(window).width() / $('.subway-map').width())
+      $(".subway-map").css("zoom", $(window).width() * 1.5 / $('.subway-map').width())
+            $(".subway-map").css("position", "relative")
 
+            $(".subway-map").css("left", '-200px')
         }
   
     };

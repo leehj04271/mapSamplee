@@ -46,13 +46,14 @@
             margin: 5px 5px 5px 0;
         }
 
-        a{
-            font-size: 30px;
+/*         a{
+            font-size: 25px;
+            font-weight: 900;
            
             
         }
 
-
+ */
 
         .nav {
             border: 2px solid blue;
@@ -79,52 +80,108 @@
 </head>
 
 <body style="zoom : 1">
-    <div class="subway-map" data-columns="12" data-rows="10" data-cellSize="90" data-legendId="legend"
-        data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
-        <ul data-color="#36AEFF" data-label="jQuery Widgets">
-            <li data-coords="2,2" data-marker="interchange"><a href="http://jqueryui.com/demos/accordion/">Accordion</a>
-            </li>
-            <li data-coords="4,2"><a href="http://jqueryui.com/demos/autocomplete/"><a
-                        href="http://jqueryui.com/demos/autocomplete/">Auto\ncomplete</a></li>
-            <li data-coords="5,3" data-dir="E"></li>
-            <li data-coords="5,7" data-marker="@station"><a
-                    href="http://jqueryui.com/demos/slider/">Slider</a></li> <!-- marker-only node -->
-            <li data-coords="6,4" data-dir="S" data-marker="interchange" data-markerInfo="h5"><a
-                    href="http://jqueryui.com/demos/datepicker/">Date\npicker</a></li>
-            <li data-coords="7,4"></li>
-            <li data-coords="7.15,8" data-marker="@station" ><a
-                    href="http://jqueryui.com/demos/dialog/">Dialog</a></li>
-            <!-- marker-only node, moved to the right by 0.15 -->
-            <li data-coords="8,3" data-dir="E"></li>
-            <li data-coords="8,2"></li>
-            <li data-coords="9,1" data-dir="N"></li>
-            <li data-coords="10,2" data-dir="E" data-marker="interchange" ><a
-                    href="http://jqueryui.com/demos/button/">Button</a></li>
-            <li data-coords="10,5"></li>
-            <li data-coords="9,6" data-dir="S" data-marker="station"><a
-                    href="http://jqueryui.com/demos/progressbar/">Progress\nbar</a></li>
-            <li data-coords="6,9"></li>
-            <li data-coords="5,8" data-dir="W"></li>
-            <li data-coords="5,7"></li>
-            <li data-coords="4,6" data-dir="N"></li>
-            <li data-coords="2,6"><a href="http://jqueryui.com/demos/tabs/">Tabs</a></li>
-        </ul>
+    <div class="subway-map" data-columns="25" data-rows="16" data-cellSize="40" data-legendId="legend"
+        data-textClass="text" data-gridNumbers="true" data-grid="true" data-lineWidth="8">
+    <!--     <ul data-color="#82eca7" data-label="jQuery Widgets">
+            <li data-coords="18,2"><a href="#">신길동</a></li>
+            <li data-coords="19,2"><a href="#">용두</a></li>
+            <li data-coords="20,3" data-dir="E"><a href="#">신답</a></li>
+            <li data-coords="20,4"><a href="#">용답</a></li>
+            <li data-coords="20,7"><a href="#">건대입구</a></li>
+            <li data-coords="20,8"><a href="#">구의</a></li>
+            <li data-coords="20,9"><a href="#">강변</a></li>
+            <li data-coords="20,10"><a href="#">잠실나루</a></li>
+            <li data-coords="20,11"><a href="#">잠실</a></li>
+            <li data-coords="20,12"><a href="#">잠실새내</a></li>
+            <li data-coords="20,14"><a href="#">종합운동장</a></li>
+            <li data-coords="19,15" data-dir="S"><a href="#">삼성</a></li>
+            <li data-coords="18,15"><a href="#">선릉</a></li>
+    
+            <li data-coords="17,15"><a href="#">역삼</a></li>
+            <li data-coords="16,15"><a href="#">강남</a></li>
+            <li data-coords="15,15"><a href="#">교대</a></li>
+            <li data-coords="14,15"><a href="#">서초</a></li>
+            <li data-coords="13,15"><a href="#">방배</a></li>
+            <li data-coords="12,15"><a href="#">사당</a></li>
+            <li data-coords="11,15"><a href="#">낙성대</a></li>
+            <li data-coords="9,15"><a href="#">서울대입구</a></li>
+            <li data-coords="7,15"><a href="#">봉천</a></li>
+            <li data-coords="6,15"><a href="#">신대방</a></li>
+            <li data-coords="5,14" data-dir="W"><a href="#">구로디지털단지</a></li>
+            <li data-coords="5,13"><a href="#">대림</a></li>
+            <li data-coords="5,12"><a href="#"></a></li>
+            <li data-coords="5,11"><a href="#">신도림</a></li>
+            <li data-coords="5,10"><a href="#">문래</a></li>
+            <li data-coords="5,9"><a href="#">영등포구청</a></li>
+            <li data-coords="5,8"><a href="#">당산</a></li>
+            <li data-coords="5,7"><a href="#">합정</a></li>
+            <li data-coords="5,6"><a href="#">홍대입구</a></li>
+            <li data-coords="5,5"><a href="#">신촌</a></li>
+            <li data-coords="6,4"><a href="#">이대</a></li>
+            <li data-coords="7,4"><a href="#">아현</a></li>
+            <li data-coords="8,4"><a href="#">충정로</a></li>
+            <li data-coords="9,4"><a href="#">시청</a></li>
+            <li data-coords="10,4"><a href="#">을지로입구</a></li>
+            <li data-coords="12,4" data-labelPos="N"><a href="#">을지로3가</a></li>
+            <li data-coords="13,4"><a href="#">을지로4가</a></li>
+            <li data-coords="14,4"><a href="#">동역공</a></li>
+            <li data-coords="15,4"><a href="#">상왕십리</a></li>
+            <li data-coords="17,4"><a href="#">왕십리</a></li>
+            <li data-coords="18,4"><a href="#">한양대</a></li>
+            <li data-coords="19,4"><a href="#">뚝섬</a></li>
+            <li data-coords="20,5" data-dir="E"><a href="#"></a></li>
+          </ul> -->
 
-        <ul data-color="#FF7936 " data-label="jQuery Interactions" data-shiftCoords="0,-1" data-outline="true"
-            data-dotted="true">
-            <li data-coords="2,6"></li>
-            <li data-coords="2,5.9" data-marker="@interchange"> </li> <!-- marker-only node, moved up by 0.10 -->
-            <li data-coords="5,6" data-marker="@station" ><a
-                    href="http://jqueryui.com/demos/selectable/">Selectable</a></li>
-            <li data-coords="6,6"></li>
-            <li data-coords="7,3" data-marker="@station" ><a
-                    href="http://jqueryui.com/demos/resizeable/">Resizeable</a></li>
-            <li data-coords="7,5" data-dir="E" data-marker="station" data-labelPos="E"><a
-                    href="http://jqueryui.com/demos/droppable/">Droppable</a></li>
-            <li data-coords="7,1" data-marker="interchange"><a
-                    href="http://jqueryui.com/demos/draggable/">Draggable</a></li>
-        </ul>
 
+          <ul data-color="#82eca7" data-label="jQuery Widgets">
+            <li data-coords="18,2"><a href="#">신길동</a></li>
+            <li data-coords="19,2"><a href="#">용두</a></li>
+            <li data-coords="20,3" data-dir="E"><a href="#">신답</a></li>
+            <li data-coords="20,4"><a href="#">용답</a></li>
+            <li data-coords="20,7"><a href="#">건대입구</a></li>
+            <li data-coords="20,8"><a href="#">구의</a></li>
+            <li data-coords="20,9"><a href="#">강변</a></li>
+            <li data-coords="20,10"><a href="#">잠실나루</a></li>
+            <li data-coords="20,11"><a href="#">잠실</a></li>
+            <li data-coords="20,12"><a href="#">잠실새내</a></li>
+            <li data-coords="20,14"><a href="#">종합운동장</a></li>
+            <li data-coords="19,15" data-dir="S"><a href="#">삼성</a></li>
+            <li data-coords="18,15"><a href="#">선릉</a></li>
+    
+            <li data-coords="17,15"><a href="#">역삼</a></li>
+            <li data-coords="16,15"><a href="#">강남</a></li>
+            <li data-coords="15,15"><a href="#">교대</a></li>
+            <li data-coords="14,15"><a href="#">서초</a></li>
+            <li data-coords="13,15"><a href="#">방배</a></li>
+            <li data-coords="12,15"><a href="#">사당</a></li>
+            <li data-coords="11,15"><a href="#">낙성대</a></li>
+            <li data-coords="9,15"><a href="#">서울대입구</a></li>
+            <li data-coords="7,15"><a href="#">봉천</a></li>
+            <li data-coords="6,15"><a href="#">신대방</a></li>
+            <li data-coords="5,14" data-dir="W"><a href="#">구로디지털단지</a></li>
+            <li data-coords="5,13"><a href="#">대림</a></li>
+            <li data-coords="5,12"><a href="#"></a></li>
+            <li data-coords="5,11"><a href="#">신도림</a></li>
+            <li data-coords="5,10"><a href="#">문래</a></li>
+            <li data-coords="5,9"><a href="#">영등포구청</a></li>
+            <li data-coords="5,8"><a href="#">당산</a></li>
+            <li data-coords="5,7"><a href="#">합정</a></li>
+            <li data-coords="5,6"><a href="#">홍대입구</a></li>
+            <li data-coords="5,5"><a href="#">신촌</a></li>
+            <li data-coords="6,4"><a href="#">이대</a></li>
+            <li data-coords="7,4"><a href="#">아현</a></li>
+            <li data-coords="8,4"><a href="#">충정로</a></li>
+            <li data-coords="9,4"><a href="#">시청</a></li>
+            <li data-coords="10,4"><a href="#">을지로입구</a></li>
+            <li data-coords="12,4" data-labelPos="N"><a href="#">을지로3가</a></li>
+            <li data-coords="13,4"><a href="#">을지로4가</a></li>
+            <li data-coords="14,4"><a href="#">동역공</a></li>
+            <li data-coords="15,4"><a href="#">상왕십리</a></li>
+            <li data-coords="17,4"><a href="#">왕십리</a></li>
+            <li data-coords="18,4"><a href="#">한양대</a></li>
+            <li data-coords="19,4"><a href="#">뚝섬</a></li>
+            <li data-coords="20,5" data-dir="E"><a href="#"></a></li>
+          </ul>
     </div>
 
     <div class="nav">

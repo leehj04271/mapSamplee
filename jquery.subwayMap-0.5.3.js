@@ -521,27 +521,29 @@ THE SOFTWARE.
     window.onresize = () => {
 
 
-        if ($(window).width() > 768){
+        if ($(window).width() > 768) {
             $(".subway-map").css("zoom", $(window).width() * .7 / $('.subway-map').width())
 
-           
+
         } else {
-      $(".subway-map").css("zoom", $(window).width() * 1.5 / $('.subway-map').width())
+            $(".subway-map").css("zoom", $(window).width() * 1.5 / $('.subway-map').width())
             $(".subway-map").css("position", "relative")
 
             $(".subway-map").css("left", '-200px')
         }
-  
+
     };
 
     window.onload = () => {
 
-        if ($(window).width() > 768){
+        if ($(window).width() > 768) {
 
             $(".subway-map").css("zoom", $(window).width() * .7 / $('.subway-map').width())
-        }else {
-            $(".subway-map").css("zoom", $(window).width()  / $('.subway-map').width())
+        }  else {
+            $(".subway-map").css("zoom", $(window).width() * 1.5 / $('.subway-map').width())
+            $(".subway-map").css("position", "relative")
 
+            $(".subway-map").css("left", '-200px')
         }
     };
 
